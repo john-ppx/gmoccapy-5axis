@@ -1,0 +1,163 @@
+<masters>
+	<master idx="0" appTimePeriod="1000000" refClockSyncCycles="5">
+	<slave idx="0" type="generic" vid="006D7361" pid="00000802" configPdos="true">
+<!--period set-->
+<sdoConfig idx="1006" subIdx="00">
+    <sdoDataRaw data="40 42 0F 00" />
+</sdoConfig>
+<!--period compensation-->
+<sdoConfig idx="4020" subIdx="00">
+    <sdoDataRaw data="01" />
+</sdoConfig>
+<!--Movement_direction-->
+<sdoConfig idx="607E" subIdx="00">
+    <sdoDataRaw data="06" />
+</sdoConfig>
+<!--x axis front delay-->
+<sdoConfig idx="4010" subIdx="00">
+    <sdoDataRaw data="71 02 00 00" />
+</sdoConfig>
+<!--y axis front delay-->
+<sdoConfig idx="4011" subIdx="00">
+    <sdoDataRaw data="71 02 00 00" />
+</sdoConfig>
+<!--z axis front delay-->
+<sdoConfig idx="4012" subIdx="00">
+    <sdoDataRaw data="71 02 00 00" />
+</sdoConfig>
+<!--a axis front delay-->
+<sdoConfig idx="4013" subIdx="00">
+    <sdoDataRaw data="71 02 00 00" />
+</sdoConfig>
+<!--b axis front delay-->
+<sdoConfig idx="4014" subIdx="00">
+    <sdoDataRaw data="71 02 00 00" />
+</sdoConfig>
+<!--x axis behind delay-->
+<sdoConfig idx="4015" subIdx="00">
+    <sdoDataRaw data="10 27 00 00" />
+</sdoConfig>
+<!--y axis behind delay-->
+<sdoConfig idx="4016" subIdx="00">
+    <sdoDataRaw data="10 27 00 00" />
+</sdoConfig>
+<!--z axis behind delay-->
+<sdoConfig idx="4017" subIdx="00">
+    <sdoDataRaw data="10 27 00 00" />
+</sdoConfig>
+<!--a axis behind delay-->
+<sdoConfig idx="4018" subIdx="00">
+    <sdoDataRaw data="10 27 00 00" />
+</sdoConfig>
+<!--b axis behind delay-->
+<sdoConfig idx="4019" subIdx="00">
+    <sdoDataRaw data="10 27 00 00" />
+</sdoConfig>
+<!--Xrto-->
+<sdoConfig idx="6091" subIdx="00">
+    <sdoDataRaw data="00 00 7a 44" />
+</sdoConfig>
+<!--Yrto-->
+<sdoConfig idx="6891" subIdx="00">
+    <sdoDataRaw data="00 00 7a 44" />
+</sdoConfig>
+<!--Zrto-->
+<sdoConfig idx="7091" subIdx="00">
+    <sdoDataRaw data="00 00 7a 44" />
+</sdoConfig>
+<!--Arto-->
+<sdoConfig idx="7891" subIdx="00">
+    <sdoDataRaw data="00 00 7a 44" />
+</sdoConfig>
+<!--Brto-->
+<sdoConfig idx="8091" subIdx="00">
+    <sdoDataRaw data="00 00 7a 44" />
+</sdoConfig>
+<syncManager idx="0" dir="out">
+</syncManager>
+	<syncManager idx="1" dir="in">
+</syncManager>
+<syncManager idx="2" dir="out">
+<pdo idx="1600">
+	<pdoEntry idx="6200" subIdx="01" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="flood" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="mist" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="spindle-on" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="spindle-cw" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT4" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT5" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT6" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT7" halType="bit"/>
+        </pdoEntry>
+	<pdoEntry idx="6200" subIdx="02" bitLen="8" halPin="OUT8-15" halType="bit"/>
+
+	<pdoEntry idx="4000" subIdx="00" bitLen="32" halPin="spindle-rpm" halType="float" />
+	<pdoEntry idx="6040" subIdx="00" bitLen="16" halPin="control1" halType="u32" />
+
+
+</pdo>
+<pdo idx="1601">
+	<pdoEntry idx="607A" subIdx="01" bitLen="32" halPin="X" halType="float"/>
+	<pdoEntry idx="687A" subIdx="01" bitLen="32" halPin="Y" halType="float"/>
+	<pdoEntry idx="707A" subIdx="01" bitLen="32" halPin="Z" halType="float"/>
+	<pdoEntry idx="787A" subIdx="01" bitLen="32" halPin="A" halType="float"/>
+	<pdoEntry idx="807A" subIdx="01" bitLen="32" halPin="B" halType="float"/>	
+</pdo>
+
+<pdo idx="1602">
+	<pdoEntry idx="6202" subIdx="01" bitLen="8" halPin="POUT0-7" halType="bit" />
+	<pdoEntry idx="6202" subIdx="02" bitLen="8" halPin="POUT8-15" halType="bit" />
+	<pdoEntry idx="6002" subIdx="01" bitLen="8" halPin="PIN0-7" halType="bit" />
+	<pdoEntry idx="6002" subIdx="02" bitLen="8" halPin="PIN8-15" halType="bit" />
+	<pdoEntry idx="3100" subIdx="00" bitLen="8" halPin="PERR" halType="bit" />
+</pdo>
+
+</syncManager>
+<syncManager idx="3" dir="in">
+<pdo idx="1A00">
+	<pdoEntry idx="6000" subIdx="01" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="joint-0-neg-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-0-home" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-0-pos-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-1-neg-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-1-home" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-1-pos-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-2-neg-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="joint-2-home" halType="bit"/>
+        </pdoEntry>
+	<pdoEntry idx="6000" subIdx="02" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="joint-2-pos-lim" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="probe" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="probe-alarm" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="estop" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN12" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN13" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN14" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN15" halType="bit"/>
+        </pdoEntry>
+	<pdoEntry idx="6000" subIdx="07" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="handwheel-joint-0" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-joint-1" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-joint-2" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-joint-3" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-joint-4" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-scale-0" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-scale-1" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="handwheel-scale-2" halType="bit"/>
+        </pdoEntry>
+	<pdoEntry idx="6000" subIdx="08" bitLen="8"/>
+</pdo>
+<pdo idx="1A01">
+	<pdoEntry idx="4001" subIdx="01" bitLen="32" halPin="handwheel-counts" halType="float"/>
+	<pdoEntry idx="6041" subIdx="00" bitLen="16" halPin="status" halType="u32"/>
+	<pdoEntry idx="2100" subIdx="00" bitLen="8" halPin="ERR" halType="bit" />
+	<pdoEntry idx="2100" subIdx="00" bitLen="32" halPin="err-stat" halType="u32"/>
+</pdo>
+
+</syncManager>
+<!-- dcConf assignActivate="300" sync0Cycle="*1" sync0Shift="250000"/ -->
+</slave>
+</master>
+</masters>
+
+
