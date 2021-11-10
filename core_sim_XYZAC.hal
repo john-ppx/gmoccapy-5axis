@@ -65,7 +65,8 @@ net XYvel vel_xy.out => vel_xyz.in1
 net XYZvel <= vel_xyz.out
 
 # estop loopback
-net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
+#net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
+net estop lcec.0.0.IN1 => iocontrol.0.emc-enable-in
 
 # create signals for tool loading loopback
 net tool-prep-loop iocontrol.0.tool-prepare iocontrol.0.tool-prepared
@@ -76,5 +77,5 @@ net spindle-rev spindle.0.reverse
 #net spindle-speed spindle.0.speed-out
 
 net lube iocontrol.0.lube
-net flood iocontrol.0.coolant-flood
-net mist iocontrol.0.coolant-mist
+net flood iocontrol.0.coolant-flood => lcec.0.0.OUT1
+net mist iocontrol.0.coolant-mist => lcec.0.0.OUT2
