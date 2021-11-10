@@ -80,17 +80,31 @@
 <syncManager idx="2" dir="out">
 <pdo idx="1600">
 	<pdoEntry idx="6200" subIdx="01" bitLen="8" halType="complex">
-	    <complexEntry bitLen="1" halPin="flood" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="mist" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="spindle-on" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="spindle-cw" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT1" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT2" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT3" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="OUT4" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="OUT5" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="OUT6" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="OUT7" halType="bit"/>
-        </pdoEntry>
-	<pdoEntry idx="6200" subIdx="02" bitLen="8" halPin="OUT8-15" halType="bit"/>
-
+	    <complexEntry bitLen="1" halPin="OUT8" halType="bit"/>
+    </pdoEntry>
+	<pdoEntry idx="6200" subIdx="02" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="OUT9" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT10" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT11" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT12" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT13" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT14" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT15" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT16" halType="bit"/>
+    </pdoEntry>
+	<pdoEntry idx="6200" subIdx="03" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="OUT17" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="OUT18" halType="bit"/>
+	    <complexEntry bitLen="6" />
+    </pdoEntry>
+	<pdoEntry idx="6200" subIdx="04" bitLen="8" />
 	<pdoEntry idx="4000" subIdx="00" bitLen="32" halPin="spindle-rpm" halType="float" />
 	<pdoEntry idx="6040" subIdx="00" bitLen="16" halPin="control1" halType="u32" />
 
@@ -116,25 +130,54 @@
 <syncManager idx="3" dir="in">
 <pdo idx="1A00">
 	<pdoEntry idx="6000" subIdx="01" bitLen="8" halType="complex">
-	    <complexEntry bitLen="1" halPin="joint-0-neg-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-0-home" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-0-pos-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-1-neg-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-1-home" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-1-pos-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-2-neg-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="joint-2-home" halType="bit"/>
-        </pdoEntry>
+	    <complexEntry bitLen="1" halPin="IN1" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN2" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN3" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN4" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN5" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN6" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN7" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN8" halType="bit"/>
+    </pdoEntry>
 	<pdoEntry idx="6000" subIdx="02" bitLen="8" halType="complex">
-	    <complexEntry bitLen="1" halPin="joint-2-pos-lim" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="probe" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="probe-alarm" halType="bit"/>
-	    <complexEntry bitLen="1" halPin="estop" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN9" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN10" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN11" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="IN12" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="IN13" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="IN14" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="IN15" halType="bit"/>
-        </pdoEntry>
+	    <complexEntry bitLen="1" halPin="IN16" halType="bit"/>
+    </pdoEntry>
+ 	<pdoEntry idx="6000" subIdx="03" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="IN17" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN18" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN19" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN20" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN21" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN22" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN23" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN24" halType="bit"/>
+    </pdoEntry>
+ 	<pdoEntry idx="6000" subIdx="04" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="IN25" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN26" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN27" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN28" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN29" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN30" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN31" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN32" halType="bit"/>
+    </pdoEntry>
+ 	<pdoEntry idx="6000" subIdx="05" bitLen="8" halType="complex">
+	    <complexEntry bitLen="1" halPin="IN33" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN34" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN35" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN36" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN37" halType="bit"/>
+	    <complexEntry bitLen="1" halPin="IN38" halType="bit"/>
+	    <complexEntry bitLen="2" />
+    </pdoEntry>
 	<pdoEntry idx="6000" subIdx="07" bitLen="8" halType="complex">
 	    <complexEntry bitLen="1" halPin="handwheel-joint-0" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="handwheel-joint-1" halType="bit"/>
@@ -144,8 +187,7 @@
 	    <complexEntry bitLen="1" halPin="handwheel-scale-0" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="handwheel-scale-1" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="handwheel-scale-2" halType="bit"/>
-        </pdoEntry>
-	<pdoEntry idx="6000" subIdx="08" bitLen="8"/>
+    </pdoEntry>
 </pdo>
 <pdo idx="1A01">
 	<pdoEntry idx="4001" subIdx="01" bitLen="32" halPin="handwheel-counts" halType="float"/>
