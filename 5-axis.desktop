@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Name=5-axis
+Exec=linuxcnc /home/msilicon/linuxcnc/configs/sim.gmoccapy/gmoccapy_XYZAC.ini
+Type=Application
+Comment=五轴控制
+Icon=/usr/share/linuxcnc/linuxcncicon.png

@@ -65,8 +65,8 @@ net XYvel vel_xy.out => vel_xyz.in1
 net XYZvel <= vel_xyz.out
 
 # estop loopback
-#net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
-net estop lcec.0.0.IN1 => iocontrol.0.emc-enable-in
+net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
+#net estop lcec.0.0.IN1 => iocontrol.0.emc-enable-in
 
 # create signals for tool loading loopback
 net tool-prep-loop iocontrol.0.tool-prepare iocontrol.0.tool-prepared
