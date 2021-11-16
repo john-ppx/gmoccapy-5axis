@@ -178,6 +178,7 @@
 	    <complexEntry bitLen="1" halPin="IN38" halType="bit"/>
 	    <complexEntry bitLen="2" />
     </pdoEntry>
+ 	<pdoEntry idx="6000" subIdx="06" bitLen="8" />
 	<pdoEntry idx="6000" subIdx="07" bitLen="8" halType="complex">
 	    <complexEntry bitLen="1" halPin="handwheel-joint-0" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="handwheel-joint-1" halType="bit"/>
@@ -188,11 +189,11 @@
 	    <complexEntry bitLen="1" halPin="handwheel-scale-1" halType="bit"/>
 	    <complexEntry bitLen="1" halPin="handwheel-scale-2" halType="bit"/>
     </pdoEntry>
+ 	<pdoEntry idx="6000" subIdx="08" bitLen="8" />
 </pdo>
 <pdo idx="1A01">
 	<pdoEntry idx="4001" subIdx="01" bitLen="32" halPin="handwheel-counts" halType="float"/>
 	<pdoEntry idx="6041" subIdx="00" bitLen="16" halPin="status" halType="u32"/>
-	<pdoEntry idx="2100" subIdx="00" bitLen="8" halPin="ERR" halType="bit" />
 	<pdoEntry idx="2100" subIdx="00" bitLen="32" halPin="err-stat" halType="u32"/>
 </pdo>
 
