@@ -7,7 +7,7 @@
 </sdoConfig>
 <!--period compensation-->
 <sdoConfig idx="4020" subIdx="00">
-    <sdoDataRaw data="01" />
+    <sdoDataRaw data="00" />
 </sdoConfig>
 <!--Movement_direction-->
 <sdoConfig idx="607E" subIdx="00">
